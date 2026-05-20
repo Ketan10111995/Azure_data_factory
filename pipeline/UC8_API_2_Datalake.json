@@ -1,0 +1,29 @@
+{
+	"name": "UC8_API_2_Datalake",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute Pipeline1",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "UC5_API_Ingestion",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"currencylist": "INR"
+					}
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-05-12T02:24:13Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

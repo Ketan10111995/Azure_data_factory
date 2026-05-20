@@ -1,0 +1,59 @@
+{
+	"name": "SourceDataset_zxk",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Naukrisourcestorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "custs_header",
+				"folderPath": "sampledir",
+				"container": "blobcontainer1"
+			},
+			"columnDelimiter": ",",
+			"rowDelimiter": "\n",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "call_id",
+				"type": "String"
+			},
+			{
+				"name": "caller_id",
+				"type": "String"
+			},
+			{
+				"name": "receiver_id",
+				"type": "String"
+			},
+			{
+				"name": "duration",
+				"type": "String"
+			},
+			{
+				"name": "call_type",
+				"type": "String"
+			},
+			{
+				"name": "tower_id",
+				"type": "String"
+			},
+			{
+				"name": "timestamp",
+				"type": "String"
+			},
+			{
+				"name": "cost",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

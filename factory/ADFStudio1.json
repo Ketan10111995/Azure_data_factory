@@ -1,0 +1,15 @@
+{
+	"name": "ADFStudio1",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4249c442-dfb1-44ac-bfd0-4ff9e620267a",
+		"tenantId": "03bf1448-1e9b-436b-8fad-29ddb7f4456a"
+	}
+}
